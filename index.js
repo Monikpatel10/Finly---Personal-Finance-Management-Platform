@@ -8,7 +8,7 @@ const data = {
 }; 
 
 jsonfile.writeFile(path, data,()=>{
-    simpleGit().add([path]).commit(date,{'-- date' :date}).push()
+    simpleGit().add([path]).commit(date,{"-- date":date}).push()
 });
 
 simpleGit().add([path]).commit(date,{'--date':date}).push();
